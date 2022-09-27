@@ -1,0 +1,30 @@
+{% set name = "weighted_bootstrap_randomforest" %}
+{% set version = "2022.9.26" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+  script: $PYTHON -m pip install --no-deps --ignore-installed .
+
+source:
+  url: https://github.com/jolespin/weighted_bootstrap_randomforest/releases/download/v{{version}}/weighted_bootstrap_randomforest-{{version}}.tar.gz
+
+build:
+  noarch: python
+  number: 0
+
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - pandas >=0.24.2
+    - numpy >=1.11
+    - scikit-learn >= 0.24.2
+
+about:
+  home: https://github.com/jolespin/weighted_bootstrap_randomforest
+  license: BSD-3
+  license_family: BSD
+  summary: 'Weighted bootstrap Random Forests'
+  description: 'Implementations of Weighted bootstrap Random Forests classifier and regressors'
