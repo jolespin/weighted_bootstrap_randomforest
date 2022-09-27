@@ -9,7 +9,10 @@ Implementations for weighted bootstrap random forest classifier and regressor mo
 ```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from weighted_bootstrap_randomforest import WeightedBootstrapRandomForestClassifier, WeightedBootstrapRandomForestRegressor
+from weighted_bootstrap_randomforest import (
+    WeightedBootstrapRandomForestClassifier, 
+    WeightedBootstrapRandomForestRegressor,
+)
 
 # Load data
 X = pd.read_csv("https://github.com/jolespin/walkthroughs/blob/main/data/iris/X.tsv.gz?raw=true", sep="\t", index_col=0, compression="gzip")
