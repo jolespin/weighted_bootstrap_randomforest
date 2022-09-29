@@ -2,6 +2,22 @@
 
 Implementations for weighted bootstrap random forest classifier and regressor models.
 
+### Installation: 
+
+**PyPI:**
+
+```
+pip install weighted_bootstrap_randomforest
+```
+
+**Dependencies:** 
+
+	* pandas >= 0.24.2
+	* numpy >= 1.11
+	* joblib
+	* scikit-learn >= 0.24.2
+
+
 ### Usage: 
 
 **Classification:**
